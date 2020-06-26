@@ -42,5 +42,4 @@ object ClientModule {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
-
 }

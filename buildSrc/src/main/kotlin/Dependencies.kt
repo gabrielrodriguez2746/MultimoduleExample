@@ -71,6 +71,7 @@ object Libraries {
             const val retrofit = "2.7.2"
             const val gson = "2.8.5"
             const val okhttp = "4.1.0"
+            const val ktlint = "0.29.0"
         }
 
         const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
@@ -85,6 +86,8 @@ object Libraries {
         const val gson = "com.google.code.gson:gson:$${Versions.gson}"
         const val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
         const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
+
+        const val ktlint = "com.github.shyiko:ktlint:${Versions.ktlint}"
 
     }
 

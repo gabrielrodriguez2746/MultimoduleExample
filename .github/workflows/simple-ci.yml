@@ -14,10 +14,10 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+
   test:
     # The type of runner that the job will run on
-    name: Run Unit Tests
+    name: Run Unit Tests and ktlint
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -30,7 +30,7 @@ jobs:
           java-version: 1.8
       # Runs a single command using the runners shell
       - name: Unit tests
-        run: bash ./gradlew :app:testDebugUnitTest --stacktrace
+        run: bash ./gradlew ktlint :app:testDebugUnitTest --stacktrace
 
   apk:
     name: Generate APK
