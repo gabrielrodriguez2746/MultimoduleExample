@@ -4,6 +4,8 @@ plugins {
     kotlin("kapt")
 }
 
+apply(from = "$rootDir/buildSrc/ktlint.gradle.kts")
+
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(Libraries.Kotlin.stdLib)

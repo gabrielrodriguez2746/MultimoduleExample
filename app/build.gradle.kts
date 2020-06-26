@@ -4,6 +4,7 @@ plugins {
 }
 
 apply(from = "$rootDir/buildSrc/android.kts")
+apply(from = "$rootDir/buildSrc/ktlint.gradle.kts")
 
 android {
 
