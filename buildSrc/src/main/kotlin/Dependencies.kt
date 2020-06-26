@@ -36,8 +36,10 @@ object Libraries {
         const val appCompat = "androidx.appcompat:appcompat:${Versions.jetPack}"
         const val ktxCore = "androidx.core:core-ktx:${Versions.ktx}"
         const val activity = "androidx.activity:activity-ktx:${Versions.activity}"
-        const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
-        const val viewModelLifecycle = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeCycle}"
+        const val constraintLayout =
+            "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+        const val viewModelLifecycle =
+            "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeCycle}"
     }
 
     object Test {
@@ -59,6 +61,31 @@ object Libraries {
         }
 
         const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.core}"
+    }
+
+    object Externals {
+
+        private object Versions {
+            const val dagger = "2.25.3"
+            // Networking
+            const val retrofit = "2.7.2"
+            const val gson = "2.8.5"
+            const val okhttp = "4.1.0"
+        }
+
+        const val dagger = "com.google.dagger:dagger:${Versions.dagger}"
+        const val daggerAndroid = "com.google.dagger:dagger-android:${Versions.dagger}"
+        const val daggerAndroidSupport =
+            "com.google.dagger:dagger-android-support:${Versions.dagger}"
+        const val daggerCompiler = "com.google.dagger:dagger-compiler:${Versions.dagger}"
+        const val daggerAnnotationProcessor =
+            "com.google.dagger:dagger-android-processor:${Versions.dagger}"
+
+        const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
+        const val gson = "com.google.code.gson:gson:$${Versions.gson}"
+        const val gsonConverter = "com.squareup.retrofit2:converter-gson:${Versions.retrofit}"
+        const val loggingInterceptor = "com.squareup.okhttp3:logging-interceptor:${Versions.okhttp}"
+
     }
 
 }
